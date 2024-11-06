@@ -20,6 +20,7 @@ namespace Tyuiu.IvanovPG.Sprint4.Task0.V3.Lib
     }
 }
 
+
 //for (int i = 0; i < array.Length; i++)
 //{
 //    if (array[i] % 2 != 0)
