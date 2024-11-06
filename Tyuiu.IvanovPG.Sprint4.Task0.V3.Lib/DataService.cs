@@ -7,15 +7,15 @@ namespace Tyuiu.IvanovPG.Sprint4.Task0.V3.Lib
     {
         public int GetMultOddArrEl(int[] array)
         {
-            int pro = 1;
+            int с = 1;
             foreach (int i in array)
             {
-                if (i % 2 == 0)
+                if (i % 2 != 0)
                 {
-                    pro = pro * i;
+                    с = с * i;
                 }
             }
-            return pro;
+            return с;
         }
     }
 }
