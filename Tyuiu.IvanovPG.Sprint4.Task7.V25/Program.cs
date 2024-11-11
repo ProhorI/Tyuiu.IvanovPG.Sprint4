@@ -7,21 +7,23 @@ namespace Tyuiu.IvanovPG.Sprint4.Task7.V25
     {
         static void Main(string[] args)
         {
-            int rows = 4;
-            int colums = 3;
-            int[,] mtrx = new int[rows, colums];
-            string str = "348561792486";
-
             DataService ds = new DataService();
-            Console.WriteLine("******************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                           *");
-            Console.WriteLine("******************************************************************************");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            int rows = 4;
+            int columns = 3;
+            int[,] mtrx = new int[rows, columns];
+            string str = "348561792486";
+            int sum = 0;
+
             int index = 0;
 
-            Console.WriteLine("\nМассив:");
-            for (int i = 0; i < rows; i++) 
+            Console.WriteLine("\nМассив: ");
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < colums; j++) 
+                for (int j = 0; j < columns; j++)
                 {
                     Console.Write($"{str[index]} \t");
                     index++;
@@ -33,8 +35,8 @@ namespace Tyuiu.IvanovPG.Sprint4.Task7.V25
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int res = ds.Calculate(rows, colums, str);
-            Console.WriteLine("сумма = " + res);
+            int res = ds.Calculate(rows, columns, str);
+            Console.WriteLine("Сумма четных элементов = " + res);
             Console.ReadKey();
         }
     }
